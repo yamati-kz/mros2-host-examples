@@ -23,6 +23,7 @@ find_package(geometry_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
+find_package(ament_cmake REQUIRED)
 
 add_executable(sub_node src/sub_node.cpp)
 ament_target_dependencies(sub_node rclcpp geometry_msgs)
